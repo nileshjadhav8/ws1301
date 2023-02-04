@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+	<div>
+		<h1>Data Directory</h1>
+		<hr>
+		<div th:each="dirMap : ${contactsDirMap}">
+			
+			
+			<a href="#" th:href="@{/searchContact(id=${dirMap.value.id})}"> <label th:text="${dirMap.value.name}"></label></a>
+
+		</div>
+	</div>
+	<hr>
+
+	</div>
+</body>
+
+</html>
